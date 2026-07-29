@@ -1,0 +1,78 @@
+:root{
+  --sand: #F6F1E6;
+  --sand-dim: #ECE4D2;
+  --sage: #4F6F63;
+  --sage-deep: #1E4D3B;
+  --ink: #26302A;
+  --ink-soft: #5A655D;
+  --amber: #C4823D;
+  --amber-soft: #E8CBA3;
+  --rule: #DCD3BA;
+}
+html{scroll-behavior:smooth;}
+body{
+  background:var(--sand);
+  color:var(--ink);
+  font-family:'Manrope', sans-serif;
+}
+.font-display{font-family:'Newsreader', serif;}
+
+.eyebrow{
+  display:flex; align-items:center; gap:8px;
+  font-size:0.72rem; text-transform:uppercase; letter-spacing:0.18em;
+  color:var(--amber); font-weight:600;
+}
+.eyebrow svg{ flex-shrink:0; }
+
+.reveal{opacity:0; transform:translateY(14px); transition:opacity 0.7s ease, transform 0.7s ease;}
+.reveal.is-visible{opacity:1; transform:translateY(0);}
+@media (prefers-reduced-motion: reduce){
+  .reveal{opacity:1; transform:none; transition:none;}
+  html{scroll-behavior:auto;}
+}
+
+.compass-spin{ animation:spin 60s linear infinite; transform-origin:center; }
+@keyframes spin{ to{ transform:rotate(360deg); } }
+@media (prefers-reduced-motion: reduce){ .compass-spin{ animation:none; } }
+
+.nav-link{position:relative; color:var(--ink-soft);}
+.nav-link::after{
+  content:'';
+  position:absolute; left:0; bottom:-4px;
+  width:0; height:2px;
+  background:var(--amber);
+  transition:width 0.3s ease;
+}
+.nav-link:hover::after{width:100%;}
+.nav-link:hover{color:var(--sage-deep);}
+
+.waypoint-line{
+  position:absolute; top:22px; left:22px; right:22px; height:0;
+  border-top:2px dashed var(--rule);
+  z-index:0;
+}
+.waypoint-dot{
+  width:44px; height:44px; border-radius:9999px;
+  background:var(--sage); color:var(--sand);
+  display:flex; align-items:center; justify-content:center;
+  font-family:'Newsreader', serif; font-size:1.15rem; font-weight:600;
+  position:relative; z-index:1;
+}
+
+input:focus, textarea:focus{outline:2px solid var(--sage); outline-offset:2px;}
+
+.mobile-menu{max-height:0; overflow:hidden; transition:max-height 0.35s ease;}
+.mobile-menu.open{max-height:420px;}
+
+.crisis-list li{position:relative; padding-left:1.1rem;}
+.crisis-list li::before{
+  content:'';
+  position:absolute; left:0; top:0.55em;
+  width:6px; height:6px; border-radius:9999px;
+  background:var(--amber);
+}
+
+.faq-item summary{cursor:pointer; list-style:none;}
+.faq-item summary::-webkit-details-marker{display:none;}
+.faq-item .faq-icon{transition:transform 0.25s ease;}
+.faq-item[open] .faq-icon{transform:rotate(45deg);}

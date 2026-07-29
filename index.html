@@ -3,85 +3,77 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Centrum Psychologiczno-Terapeutyczne Aneta Misiak — wsparcie psychologiczne i terapeutyczne</title>
+<link rel="icon" type="image/png" href="dmuchawiec-web.png">
+
+<!-- ⚠️ Placeholder domain (https://www.example.com/) used throughout this SEO block —
+     replace every occurrence with the real production domain before publishing. -->
+
+<title>Centrum Psychologiczno-Terapeutyczne Aneta Misiak | Psychoterapia Lubartów</title>
+<meta name="description" content="Centrum Psychologiczno-Terapeutyczne Anety Misiak w Lubartowie: psychoterapia indywidualna, terapia dzieci i młodzieży, konsultacje rodzicielskie, rehabilitacja spektrum autyzmu. Umów wizytę online.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Aneta Misiak">
+<link rel="canonical" href="https://www.example.com/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pl_PL">
+<meta property="og:site_name" content="Centrum Psychologiczno-Terapeutyczne Aneta Misiak">
+<meta property="og:title" content="Centrum Psychologiczno-Terapeutyczne Aneta Misiak | Psychoterapia Lubartów">
+<meta property="og:description" content="Psychoterapia i poradnictwo psychologiczne dla dzieci, młodzieży, dorosłych i rodzin w Lubartowie. Umów wizytę online.">
+<meta property="og:url" content="https://www.example.com/">
+<meta property="og:image" content="https://www.example.com/dmuchawiec-web.png">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Centrum Psychologiczno-Terapeutyczne Aneta Misiak | Psychoterapia Lubartów">
+<meta name="twitter:description" content="Psychoterapia i poradnictwo psychologiczne dla dzieci, młodzieży, dorosłych i rodzin w Lubartowie. Umów wizytę online.">
+<meta name="twitter:image" content="https://www.example.com/dmuchawiec-web.png">
+
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --sand: #F6F1E6;
-    --sand-dim: #ECE4D2;
-    --sage: #4F6F63;
-    --sage-deep: #35473F;
-    --ink: #26302A;
-    --ink-soft: #5A655D;
-    --amber: #C4823D;
-    --amber-soft: #E8CBA3;
-    --rule: #DCD3BA;
-  }
-  html{scroll-behavior:smooth;}
-  body{
-    background:var(--sand);
-    color:var(--ink);
-    font-family:'Manrope', sans-serif;
-  }
-  .font-display{font-family:'Newsreader', serif;}
+<link href="styles.css" rel="stylesheet">
 
-  .eyebrow{
-    display:flex; align-items:center; gap:8px;
-    font-size:0.72rem; text-transform:uppercase; letter-spacing:0.18em;
-    color:var(--amber); font-weight:600;
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalBusiness",
+  "name": "Centrum Psychologiczno-Terapeutyczne Aneta Misiak",
+  "image": "https://www.example.com/dmuchawiec-web.png",
+  "url": "https://www.example.com/",
+  "telephone": "+48507120887",
+  "email": "anetamisiak@interia.pl",
+  "priceRange": "200–300 zł",
+  "medicalSpecialty": "Psychiatric",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "ul. Słowackiego 11",
+    "addressLocality": "Lubartów",
+    "postalCode": "21-100",
+    "addressCountry": "PL"
+  },
+  "founder": {
+    "@type": "Person",
+    "name": "Aneta Misiak",
+    "jobTitle": "Psychoterapeuta"
+  },
+  "potentialAction": {
+    "@type": "ReserveAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://calendify.pl/reserve/centrum-psychologiczno-terapeutyczne",
+      "actionPlatform": [
+        "http://schema.org/DesktopWebPlatform",
+        "http://schema.org/MobileWebPlatform"
+      ]
+    },
+    "result": {
+      "@type": "Reservation",
+      "name": "Rezerwacja wizyty"
+    }
   }
-  .eyebrow svg{ flex-shrink:0; }
-
-  .reveal{opacity:0; transform:translateY(14px); transition:opacity 0.7s ease, transform 0.7s ease;}
-  .reveal.is-visible{opacity:1; transform:translateY(0);}
-  @media (prefers-reduced-motion: reduce){
-    .reveal{opacity:1; transform:none; transition:none;}
-    html{scroll-behavior:auto;}
-  }
-
-  .compass-spin{ animation:spin 60s linear infinite; transform-origin:center; }
-  @keyframes spin{ to{ transform:rotate(360deg); } }
-  @media (prefers-reduced-motion: reduce){ .compass-spin{ animation:none; } }
-
-  .nav-link{position:relative; color:var(--ink-soft);}
-  .nav-link::after{
-    content:'';
-    position:absolute; left:0; bottom:-4px;
-    width:0; height:2px;
-    background:var(--amber);
-    transition:width 0.3s ease;
-  }
-  .nav-link:hover::after{width:100%;}
-  .nav-link:hover{color:var(--sage-deep);}
-
-  .waypoint-line{
-    position:absolute; top:22px; left:22px; right:22px; height:0;
-    border-top:2px dashed var(--rule);
-    z-index:0;
-  }
-  .waypoint-dot{
-    width:44px; height:44px; border-radius:9999px;
-    background:var(--sage); color:var(--sand);
-    display:flex; align-items:center; justify-content:center;
-    font-family:'Newsreader', serif; font-size:1.15rem; font-weight:600;
-    position:relative; z-index:1;
-  }
-
-  input:focus, textarea:focus{outline:2px solid var(--sage); outline-offset:2px;}
-
-  .mobile-menu{max-height:0; overflow:hidden; transition:max-height 0.35s ease;}
-  .mobile-menu.open{max-height:420px;}
-
-  .crisis-list li{position:relative; padding-left:1.1rem;}
-  .crisis-list li::before{
-    content:'';
-    position:absolute; left:0; top:0.55em;
-    width:6px; height:6px; border-radius:9999px;
-    background:var(--amber);
-  }
-</style>
+}
+</script>
 </head>
 <body class="antialiased">
 
@@ -89,22 +81,19 @@
 <header class="sticky top-0 z-50 bg-[#F6F1E6]/95 backdrop-blur border-b" style="border-color:var(--rule);">
   <div class="max-w-6xl mx-auto px-6 sm:px-10 py-4 flex items-center justify-between">
     <a href="#top" class="flex items-center gap-3">
-      <svg width="38" height="38" viewBox="0 0 48 48" aria-hidden="true">
-        <circle cx="24" cy="24" r="21" fill="none" stroke="var(--sage)" stroke-width="2"/>
-        <path d="M24 12 L28 24 L24 36 L20 24 Z" fill="var(--amber)"/>
-      </svg>
+      <img src="dmuchawiec-web.png" alt="Logo &mdash; Centrum Psychologiczno-Terapeutyczne" width="38" height="38" class="object-contain">
       <span class="flex flex-col leading-tight">
         <span class="font-display font-semibold text-base sm:text-lg tracking-tight" style="color:var(--sage-deep)">Centrum Psychologiczno-Terapeutyczne</span>
         <span class="text-[0.68rem] uppercase tracking-widest" style="color:var(--amber)">Aneta Misiak</span>
       </span>
     </a>
 
-    <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+    <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
       <a href="#services" class="nav-link">Oferta</a>
-      <a href="#team" class="nav-link">Zespół</a>
-      <a href="#process" class="nav-link">Jak to działa</a>
-      <a href="#location" class="nav-link">Lokalizacja</a>
-      <a href="#contact" class="nav-link">Kontakt</a>
+      <a href="zespol.html" class="nav-link">Zespół</a>
+      <a href="cennik.html" class="nav-link">Cennik</a>
+      <a href="faq.html" class="nav-link">FAQ</a>
+      <a href="kontakt.html" class="nav-link">Kontakt</a>
     </nav>
 
     <button id="menuBtn" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Przełącz menu" aria-expanded="false">
@@ -117,10 +106,10 @@
   <div id="mobileMenu" class="mobile-menu md:hidden border-t" style="border-color:var(--rule);">
     <div class="flex flex-col px-6 py-4 gap-4 text-sm font-medium" style="color:var(--ink-soft)">
       <a href="#services">Oferta</a>
-      <a href="#team">Zespół</a>
-      <a href="#process">Jak to działa</a>
-      <a href="#location">Lokalizacja</a>
-      <a href="#contact">Kontakt</a>
+      <a href="zespol.html">Zespół</a>
+      <a href="cennik.html">Cennik</a>
+      <a href="faq.html">FAQ</a>
+      <a href="kontakt.html">Kontakt</a>
     </div>
   </div>
 </header>
@@ -137,16 +126,19 @@
     </h1>
     <p class="text-lg leading-relaxed max-w-md mb-8" style="color:var(--ink-soft)">
       Oferujemy psychoterapię i poradnictwo psychologiczne dla dzieci, młodzieży,
-      dorosłych i rodzin &mdash; a także rehabilitację, terapię logopedyczną oraz
-      warsztaty psychoedukacyjne pod opieką Anety Misiak.
+      dorosłych i rodzin &mdash; a także rehabilitację oraz warsztaty psychoedukacyjne
+      pod opieką Anety Misiak w Lubartowie.
     </p>
     <div class="flex flex-wrap gap-4">
-      <a href="https://calendify.pl" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-sm text-sm font-semibold text-white transition hover:opacity-90" style="background:var(--sage-deep)">Umów wizytę</a>
+      <a href="https://calendify.pl/reserve/centrum-psychologiczno-terapeutyczne" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-sm text-sm font-semibold text-white transition hover:opacity-90" style="background:var(--sage-deep)">Umów wizytę</a>
       <a href="#services" class="px-6 py-3 rounded-sm text-sm font-semibold border transition hover:bg-white/60" style="border-color:var(--sage-deep); color:var(--sage-deep)">Nasza oferta</a>
     </div>
   </div>
 
   <div class="md:col-span-2 flex justify-center reveal">
+    <img src="dmuchawiec-web.png" alt="Dmuchawiec &mdash; symbol nadziei i wsparcia, Centrum Psychologiczno-Terapeutyczne Aneta Misiak w Lubartowie" width="710" height="900" class="w-full max-w-[240px] sm:max-w-[280px] h-auto" fetchpriority="high">
+  </div>
+  <!-- <div class="md:col-span-2 flex justify-center reveal">
     <svg width="260" height="260" viewBox="0 0 260 260" aria-hidden="true">
       <circle cx="130" cy="130" r="118" fill="var(--sand-dim)"/>
       <circle cx="130" cy="130" r="98" fill="none" stroke="var(--rule)" stroke-width="1.5"/>
@@ -160,7 +152,7 @@
       <text x="18" y="134" text-anchor="middle" font-family="Manrope" font-size="10" letter-spacing="2" fill="var(--ink-soft)">W</text>
       <text x="242" y="134" text-anchor="middle" font-family="Manrope" font-size="10" letter-spacing="2" fill="var(--ink-soft)">E</text>
     </svg>
-  </div>
+  </div> -->
 </section>
 
 <!-- ================= SERVICES ================= -->
@@ -175,23 +167,13 @@
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 reveal">
       <div class="bg-white rounded-sm p-6 border" style="border-color:var(--rule);">
         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" class="mb-4"><circle cx="9" cy="8" r="3" stroke="var(--sage)" stroke-width="1.8"/><circle cx="18" cy="9" r="2.4" stroke="var(--amber)" stroke-width="1.8"/><path d="M3 20 c0-3.5 2.7-6 6-6 s6 2.5 6 6" stroke="var(--sage)" stroke-width="1.8" stroke-linecap="round"/><path d="M15 20 c0-2.6 1.8-4.6 4-4.6" stroke="var(--amber)" stroke-width="1.8" stroke-linecap="round"/></svg>
-        <h3 class="font-display text-lg font-semibold mb-2" style="color:var(--ink)">Trening umiejętności społecznych</h3>
-        <p class="text-sm leading-relaxed" style="color:var(--ink-soft)">Trening umiejętności społecznych dla dzieci.</p>
-      </div>
-      <div class="bg-white rounded-sm p-6 border" style="border-color:var(--rule);">
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" class="mb-4"><rect x="4" y="4" width="16" height="16" rx="1" stroke="var(--sage)" stroke-width="1.8"/><path d="M8 9 h8 M8 13 h5" stroke="var(--amber)" stroke-width="1.8" stroke-linecap="round"/></svg>
-        <h3 class="font-display text-lg font-semibold mb-2" style="color:var(--ink)">Warsztaty socjoterapeutyczne</h3>
-        <p class="text-sm leading-relaxed" style="color:var(--ink-soft)">Warsztaty socjoterapeutyczne dla młodzieży.</p>
+        <h3 class="font-display text-lg font-semibold mb-2" style="color:var(--ink)">Trening umiejętności społecznych i warsztaty socjoterapeutyczne</h3>
+        <p class="text-sm leading-relaxed" style="color:var(--ink-soft)">Zajęcia grupowe rozwijające kompetencje społeczne &mdash; dla dzieci i młodzieży.</p>
       </div>
       <div class="bg-white rounded-sm p-6 border" style="border-color:var(--rule);">
         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" class="mb-4"><path d="M4 19 V5 a1 1 0 0 1 1-1 h14 a1 1 0 0 1 1 1 V19" stroke="var(--sage)" stroke-width="1.8" stroke-linecap="round"/><path d="M8 8 H16 M8 12 H16 M8 16 H12" stroke="var(--amber)" stroke-width="1.8" stroke-linecap="round"/></svg>
         <h3 class="font-display text-lg font-semibold mb-2" style="color:var(--ink)">Warsztaty psychoedukacyjne dla rodziców</h3>
         <p class="text-sm leading-relaxed" style="color:var(--ink-soft)">Praktyczne spotkania wspierające rodziców w wychowaniu i rozumieniu potrzeb dziecka.</p>
-      </div>
-      <div class="bg-white rounded-sm p-6 border" style="border-color:var(--rule);">
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" class="mb-4"><path d="M4 20 L10 14 L14 17 L20 8" stroke="var(--sage)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 8 H20 V13" stroke="var(--amber)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        <h3 class="font-display text-lg font-semibold mb-2" style="color:var(--ink)">Doradztwo zawodowe</h3>
-        <p class="text-sm leading-relaxed" style="color:var(--ink-soft)">Wsparcie w wyborze ścieżki edukacyjnej i zawodowej.</p>
       </div>
       <div class="bg-white rounded-sm p-6 border" style="border-color:var(--rule);">
         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" class="mb-4"><path d="M12 21 s7-7.5 7-12 a7 7 0 0 0 -14 0 c0 4.5 7 12 7 12 Z" stroke="var(--sage)" stroke-width="1.8"/><circle cx="12" cy="9" r="2.4" stroke="var(--amber)" stroke-width="1.8"/></svg>
@@ -207,11 +189,6 @@
         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" class="mb-4"><path d="M12 3 v4 M12 17 v4 M3 12 h4 M17 12 h4" stroke="var(--amber)" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="12" r="5" stroke="var(--sage)" stroke-width="1.8"/></svg>
         <h3 class="font-display text-lg font-semibold mb-2" style="color:var(--ink)">Rehabilitacja &mdash; spektrum autyzmu</h3>
         <p class="text-sm leading-relaxed" style="color:var(--ink-soft)">Rehabilitacja dzieci i młodzieży ze spektrum autyzmu.</p>
-      </div>
-      <div class="bg-white rounded-sm p-6 border" style="border-color:var(--rule);">
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" class="mb-4"><path d="M4 12 a8 5 0 0 1 16 0 a8 5 0 0 1 -16 0 Z" stroke="var(--sage)" stroke-width="1.8"/><path d="M12 9 v3 M10.5 13.5 h3" stroke="var(--amber)" stroke-width="1.8" stroke-linecap="round"/></svg>
-        <h3 class="font-display text-lg font-semibold mb-2" style="color:var(--ink)">Terapia logopedyczna</h3>
-        <p class="text-sm leading-relaxed" style="color:var(--ink-soft)">Terapia logopedyczna i oligofrenopedagogiczna dzieci i młodzieży.</p>
       </div>
       <div class="bg-white rounded-sm p-6 border" style="border-color:var(--rule);">
         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" class="mb-4"><circle cx="12" cy="12" r="9" stroke="var(--sage)" stroke-width="1.8"/><path d="M12 7 v5 l3 3" stroke="var(--amber)" stroke-width="1.8" stroke-linecap="round"/></svg>
@@ -244,38 +221,15 @@
   </p>
   <h2 class="font-display text-3xl mb-12 reveal" style="color:var(--sage-deep)">Zespół</h2>
 
-  <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 reveal">
-    <div>
-      <div class="aspect-square rounded-sm mb-4 flex items-center justify-center" style="background:var(--sand-dim); border:1px solid var(--rule);">
-        <span class="text-xs uppercase tracking-widest" style="color:var(--ink-soft)">Zdjęcie</span>
-      </div>
-      <p class="font-display text-lg font-semibold" style="color:var(--ink)">Aneta Misiak</p>
-      <p class="text-sm" style="color:var(--amber)">Psychoterapeuta</p>
-      <p class="text-sm mt-1" style="color:var(--ink-soft)">Psychoterapia i poradnictwo psychologiczne</p>
+  <div class="grid md:grid-cols-5 gap-10 items-center reveal">
+    <div class="md:col-span-2 aspect-square rounded-sm flex items-center justify-center" style="background:var(--sand-dim); border:1px solid var(--rule);">
+      <span class="text-xs uppercase tracking-widest" style="color:var(--ink-soft)">Zdjęcie</span>
     </div>
-    <div>
-      <div class="aspect-square rounded-sm mb-4 flex items-center justify-center" style="background:var(--sand-dim); border:1px solid var(--rule);">
-        <span class="text-xs uppercase tracking-widest" style="color:var(--ink-soft)">Zdjęcie</span>
-      </div>
-      <p class="font-display text-lg font-semibold" style="color:var(--ink)">[Imię Nazwisko]</p>
-      <p class="text-sm" style="color:var(--amber)">[do zmiany]</p>
-      <p class="text-sm mt-1" style="color:var(--ink-soft)">[do zmiany]</p>
-    </div>
-    <div>
-      <div class="aspect-square rounded-sm mb-4 flex items-center justify-center" style="background:var(--sand-dim); border:1px solid var(--rule);">
-        <span class="text-xs uppercase tracking-widest" style="color:var(--ink-soft)">Zdjęcie</span>
-      </div>
-      <p class="font-display text-lg font-semibold" style="color:var(--ink)">[Imię Nazwisko]</p>
-      <p class="text-sm" style="color:var(--amber)">[do zmiany]</p>
-      <p class="text-sm mt-1" style="color:var(--ink-soft)">[do zmiany]</p>
-    </div>
-    <div>
-      <div class="aspect-square rounded-sm mb-4 flex items-center justify-center" style="background:var(--sand-dim); border:1px solid var(--rule);">
-        <span class="text-xs uppercase tracking-widest" style="color:var(--ink-soft)">Zdjęcie</span>
-      </div>
-      <p class="font-display text-lg font-semibold" style="color:var(--ink)">[Imię Nazwisko]</p>
-      <p class="text-sm" style="color:var(--amber)">[do zmiany]</p>
-      <p class="text-sm mt-1" style="color:var(--ink-soft)">[do zmiany]</p>
+    <div class="md:col-span-3">
+      <p class="font-display text-2xl font-semibold" style="color:var(--ink)">Aneta Misiak</p>
+      <p class="text-sm mb-3" style="color:var(--amber)">Psychoterapeuta</p>
+      <p class="text-base leading-relaxed max-w-lg mb-5" style="color:var(--ink-soft)">Prowadzi psychoterapię i poradnictwo psychologiczne dla dzieci, młodzieży, dorosłych i rodzin, łącząc pracę terapeutyczną ze wsparciem w sytuacjach kryzysowych i trudnościach rozwojowych.</p>
+      <a href="zespol.html" class="text-sm font-semibold" style="color:var(--sage-deep)">Poznaj cały zespół &rarr;</a>
     </div>
   </div>
 </section>
@@ -359,60 +313,42 @@
   </div>
 </section>
 
-<!-- ================= CONTACT ================= -->
+<!-- ================= BOOKING CTA ================= -->
 <section id="contact" class="border-t" style="border-color:var(--rule); background:var(--sand-dim);">
-  <div class="max-w-6xl mx-auto px-6 sm:px-10 py-20 grid md:grid-cols-5 gap-12">
-    <div class="md:col-span-2 reveal">
-      <p class="eyebrow mb-3">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 2 L14 10 L22 12 L14 14 L12 22 L10 14 L2 12 L10 10 Z" fill="var(--amber)"/></svg>
-        Kontakt
-      </p>
-      <h2 class="font-display text-3xl mb-6" style="color:var(--sage-deep)">Napisz lub zadzwoń</h2>
-      <div class="text-sm space-y-1.5" style="color:var(--ink-soft)">
-        <p>anetamisiak@interia.pl</p>
-        <p>507 120 887</p>
-        <p>ul. Słowackiego 11, 21-100 Lubartów</p>
-      </div>
-    </div>
-
-    <div class="md:col-span-3 reveal">
-      <form class="bg-white rounded-sm border p-6 sm:p-8 space-y-6" style="border-color:var(--rule);" onsubmit="event.preventDefault();">
-        <div class="grid sm:grid-cols-2 gap-6">
-          <div>
-            <label for="name" class="text-xs uppercase tracking-wide font-semibold" style="color:var(--ink-soft)">Imię</label>
-            <input id="name" type="text" class="w-full rounded-sm border px-3 py-2 mt-1" style="border-color:var(--rule);">
-          </div>
-          <div>
-            <label for="email" class="text-xs uppercase tracking-wide font-semibold" style="color:var(--ink-soft)">Email</label>
-            <input id="email" type="email" class="w-full rounded-sm border px-3 py-2 mt-1" style="border-color:var(--rule);">
-          </div>
-        </div>
-        <div>
-          <label for="topic" class="text-xs uppercase tracking-wide font-semibold" style="color:var(--ink-soft)">W czym możemy pomóc?</label>
-          <select id="topic" class="w-full rounded-sm border px-3 py-2 mt-1 bg-white" style="border-color:var(--rule); color:var(--ink)">
-            <option>Psychoterapia dzieci i młodzieży</option>
-            <option>Psychoterapia dorosłych i rodzin</option>
-            <option>Rehabilitacja &mdash; spektrum autyzmu</option>
-            <option>Terapia logopedyczna</option>
-            <option>Poradnictwo psychologiczne</option>
-            <option>Coś innego</option>
-          </select>
-        </div>
-        <div>
-          <label for="message" class="text-xs uppercase tracking-wide font-semibold" style="color:var(--ink-soft)">Wiadomość</label>
-          <textarea id="message" rows="4" class="w-full rounded-sm border px-3 py-2 mt-1 resize-none" style="border-color:var(--rule);"></textarea>
-        </div>
-        <button type="submit" class="px-6 py-3 rounded-sm text-sm font-semibold text-white transition hover:opacity-90" style="background:var(--sage-deep)">Wyślij wiadomość</button>
-      </form>
-    </div>
+  <div class="max-w-2xl mx-auto px-6 sm:px-10 py-24 text-center reveal">
+    <p class="eyebrow mb-4 justify-center">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 2 L14 10 L22 12 L14 14 L12 22 L10 14 L2 12 L10 10 Z" fill="var(--amber)"/></svg>
+      Zrób pierwszy krok
+    </p>
+    <h2 class="font-display text-4xl leading-tight mb-5" style="color:var(--sage-deep)">Gotowi na zmianę?<br>Umów wizytę już dziś</h2>
+    <p class="text-lg leading-relaxed mb-8" style="color:var(--ink-soft)">
+      Rezerwacja online zajmuje mniej niż minutę &mdash; wybierz dogodny termin,
+      a o resztę zadbamy razem podczas pierwszego spotkania.
+    </p>
+    <a href="https://calendify.pl/reserve/centrum-psychologiczno-terapeutyczne" target="_blank" rel="noopener noreferrer" class="inline-block px-8 py-4 rounded-sm text-base font-semibold text-white transition hover:opacity-90" style="background:var(--sage-deep)">Umów wizytę online</a>
+    <p class="text-sm mt-6" style="color:var(--ink-soft)">Wolisz napisać wiadomość? <a href="kontakt.html" class="font-semibold" style="color:var(--sage-deep)">Przejdź do formularza kontaktowego &rarr;</a></p>
   </div>
 </section>
 
 <!-- ================= FOOTER ================= -->
 <footer class="border-t" style="border-color:var(--rule);">
-  <div class="max-w-6xl mx-auto px-6 sm:px-10 py-8 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs" style="color:var(--ink-soft)">
-    <span>© 2026 Centrum Psychologiczno-Terapeutyczne Aneta Misiak</span>
-    <span>Lubartów</span>
+  <div class="max-w-6xl mx-auto px-6 sm:px-10 py-10">
+    <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm mb-6" style="color:var(--ink-soft)">
+      <a href="#services" class="hover:underline">Oferta</a>
+      <a href="zespol.html" class="hover:underline">Zespół</a>
+      <a href="cennik.html" class="hover:underline">Cennik</a>
+      <a href="faq.html" class="hover:underline">FAQ</a>
+      <a href="#process" class="hover:underline">Jak to działa</a>
+      <a href="#location" class="hover:underline">Lokalizacja</a>
+      <a href="kontakt.html" class="hover:underline">Kontakt</a>
+    </div>
+    <div class="flex flex-col sm:flex-row justify-between items-center gap-3 text-xs pt-6 border-t" style="color:var(--ink-soft); border-color:var(--rule);">
+      <span>© 2026 Centrum Psychologiczno-Terapeutyczne Aneta Misiak</span>
+      <div class="flex items-center gap-4">
+        <a href="polityka-prywatnosci.html" class="hover:underline">Polityka prywatności</a>
+        <a href="regulamin.html" class="hover:underline">Regulamin</a>
+      </div>
+    </div>
   </div>
 </footer>
 

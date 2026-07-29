@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="dmuchawiec-web.png">
+<title>FAQ — Centrum Psychologiczno-Terapeutyczne Aneta Misiak</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="styles.css" rel="stylesheet">
+</head>
+<body class="antialiased">
+
+<!-- ================= HEADER ================= -->
+<header class="sticky top-0 z-50 bg-[#F6F1E6]/95 backdrop-blur border-b" style="border-color:var(--rule);">
+  <div class="max-w-6xl mx-auto px-6 sm:px-10 py-4 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-3">
+      <img src="dmuchawiec-web.png" alt="Logo &mdash; Centrum Psychologiczno-Terapeutyczne" width="38" height="38" class="object-contain">
+      <span class="flex flex-col leading-tight">
+        <span class="font-display font-semibold text-base sm:text-lg tracking-tight" style="color:var(--sage-deep)">Centrum Psychologiczno-Terapeutyczne</span>
+        <span class="text-[0.68rem] uppercase tracking-widest" style="color:var(--amber)">Aneta Misiak</span>
+      </span>
+    </a>
+
+    <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+      <a href="index.html#services" class="nav-link">Oferta</a>
+      <a href="zespol.html" class="nav-link">Zespół</a>
+      <a href="cennik.html" class="nav-link">Cennik</a>
+      <a href="faq.html" class="nav-link" style="color:var(--sage-deep)">FAQ</a>
+      <a href="kontakt.html" class="nav-link">Kontakt</a>
+    </nav>
+
+    <button id="menuBtn" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Przełącz menu" aria-expanded="false">
+      <span class="block w-6 h-px" style="background:var(--ink)"></span>
+      <span class="block w-6 h-px" style="background:var(--ink)"></span>
+      <span class="block w-6 h-px" style="background:var(--ink)"></span>
+    </button>
+  </div>
+
+  <div id="mobileMenu" class="mobile-menu md:hidden border-t" style="border-color:var(--rule);">
+    <div class="flex flex-col px-6 py-4 gap-4 text-sm font-medium" style="color:var(--ink-soft)">
+      <a href="index.html#services">Oferta</a>
+      <a href="zespol.html">Zespół</a>
+      <a href="cennik.html">Cennik</a>
+      <a href="faq.html">FAQ</a>
+      <a href="kontakt.html">Kontakt</a>
+    </div>
+  </div>
+</header>
+
+<!-- ================= PAGE INTRO ================= -->
+<section class="max-w-6xl mx-auto px-6 sm:px-10 pt-16 sm:pt-20 pb-10 reveal">
+  <p class="eyebrow mb-3">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 2 L14 10 L22 12 L14 14 L12 22 L10 14 L2 12 L10 10 Z" fill="var(--amber)"/></svg>
+    FAQ
+  </p>
+  <h1 class="font-display text-4xl sm:text-5xl mb-5" style="color:var(--sage-deep)">Najczęściej zadawane pytania</h1>
+  <p class="text-lg leading-relaxed max-w-2xl" style="color:var(--ink-soft)">
+    Odpowiedzi na pytania, które najczęściej pojawiają się przed pierwszą wizytą.
+    Jeśli nie znajdziesz tu odpowiedzi na swoje pytanie, po prostu się z nami skontaktuj.
+  </p>
+</section>
+
+<!-- ================= FAQ LIST ================= -->
+<section class="max-w-3xl mx-auto px-6 sm:px-10 pb-20">
+  <div class="rounded-sm border divide-y reveal" style="border-color:var(--rule); background:white;">
+    <details class="faq-item px-6 py-5" style="border-color:var(--rule);">
+      <summary class="flex items-center justify-between gap-4">
+        <span class="font-display text-lg font-semibold" style="color:var(--ink)">Czy potrzebuję skierowania, aby umówić wizytę?</span>
+        <span class="faq-icon text-2xl leading-none" style="color:var(--amber)">+</span>
+      </summary>
+      <p class="text-sm leading-relaxed mt-3" style="color:var(--ink-soft)">Nie. Na konsultację można zgłosić się samodzielnie, bez skierowania od lekarza czy szkoły.</p>
+    </details>
+    <details class="faq-item px-6 py-5" style="border-color:var(--rule);">
+      <summary class="flex items-center justify-between gap-4">
+        <span class="font-display text-lg font-semibold" style="color:var(--ink)">Jak wygląda pierwsza wizyta?</span>
+        <span class="faq-icon text-2xl leading-none" style="color:var(--amber)">+</span>
+      </summary>
+      <p class="text-sm leading-relaxed mt-3" style="color:var(--ink-soft)">Pierwsze spotkanie służy poznaniu Twoich potrzeb i ustaleniu dalszych kroków &mdash; rozmawiamy o tym, co Cię do nas przyprowadza, i wspólnie planujemy dalszą pracę.</p>
+    </details>
+    <details class="faq-item px-6 py-5" style="border-color:var(--rule);">
+      <summary class="flex items-center justify-between gap-4">
+        <span class="font-display text-lg font-semibold" style="color:var(--ink)">Czy prowadzicie terapię online?</span>
+        <span class="faq-icon text-2xl leading-none" style="color:var(--amber)">+</span>
+      </summary>
+      <p class="text-sm leading-relaxed mt-3" style="color:var(--ink-soft)">Tak, część konsultacji może odbywać się zdalnie. Szczegóły ustalamy indywidualnie podczas kontaktu.</p>
+    </details>
+    <details class="faq-item px-6 py-5" style="border-color:var(--rule);">
+      <summary class="flex items-center justify-between gap-4">
+        <span class="font-display text-lg font-semibold" style="color:var(--ink)">Jakie formy płatności są akceptowane?</span>
+        <span class="faq-icon text-2xl leading-none" style="color:var(--amber)">+</span>
+      </summary>
+      <p class="text-sm leading-relaxed mt-3" style="color:var(--ink-soft)">Płatność gotówką lub przelewem. Dokładne informacje przekazujemy przed wizytą.</p>
+    </details>
+    <details class="faq-item px-6 py-5" style="border-color:var(--rule);">
+      <summary class="flex items-center justify-between gap-4">
+        <span class="font-display text-lg font-semibold" style="color:var(--ink)">Czy terapia jest refundowana przez NFZ?</span>
+        <span class="faq-icon text-2xl leading-none" style="color:var(--amber)">+</span>
+      </summary>
+      <p class="text-sm leading-relaxed mt-3" style="color:var(--ink-soft)">Obecnie prowadzimy wizyty w ramach prywatnej praktyki. O możliwości i warunkach rozliczenia zapytaj podczas kontaktu.</p>
+    </details>
+    <details class="faq-item px-6 py-5" style="border-color:var(--rule);">
+      <summary class="flex items-center justify-between gap-4">
+        <span class="font-display text-lg font-semibold" style="color:var(--ink)">Jak odwołać lub przełożyć wizytę?</span>
+        <span class="faq-icon text-2xl leading-none" style="color:var(--amber)">+</span>
+      </summary>
+      <p class="text-sm leading-relaxed mt-3" style="color:var(--ink-soft)">Prosimy o kontakt telefoniczny lub mailowy z odpowiednim wyprzedzeniem &mdash; pomożemy znaleźć nowy termin.</p>
+    </details>
+    <details class="faq-item px-6 py-5">
+      <summary class="flex items-center justify-between gap-4">
+        <span class="font-display text-lg font-semibold" style="color:var(--ink)">Czy terapia dziecka odbywa się z udziałem rodzica?</span>
+        <span class="faq-icon text-2xl leading-none" style="color:var(--amber)">+</span>
+      </summary>
+      <p class="text-sm leading-relaxed mt-3" style="color:var(--ink-soft)">Zależy od wieku dziecka i rodzaju terapii. Szczegóły ustalamy podczas pierwszego spotkania.</p>
+    </details>
+  </div>
+</section>
+
+<!-- ================= BOOKING CTA ================= -->
+<section class="border-t" style="border-color:var(--rule); background:var(--sand-dim);">
+  <div class="max-w-2xl mx-auto px-6 sm:px-10 py-20 text-center reveal">
+    <h2 class="font-display text-3xl leading-tight mb-4" style="color:var(--sage-deep)">Chcesz umówić się na wizytę?</h2>
+    <p class="text-base leading-relaxed mb-7" style="color:var(--ink-soft)">Rezerwacja online zajmuje mniej niż minutę.</p>
+    <a href="https://calendify.pl/reserve/centrum-psychologiczno-terapeutyczne" target="_blank" rel="noopener noreferrer" class="inline-block px-7 py-3.5 rounded-sm text-sm font-semibold text-white transition hover:opacity-90" style="background:var(--sage-deep)">Umów wizytę online</a>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="border-t" style="border-color:var(--rule);">
+  <div class="max-w-6xl mx-auto px-6 sm:px-10 py-10">
+    <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm mb-6" style="color:var(--ink-soft)">
+      <a href="index.html#services" class="hover:underline">Oferta</a>
+      <a href="zespol.html" class="hover:underline">Zespół</a>
+      <a href="cennik.html" class="hover:underline">Cennik</a>
+      <a href="faq.html" class="hover:underline">FAQ</a>
+      <a href="index.html#process" class="hover:underline">Jak to działa</a>
+      <a href="index.html#location" class="hover:underline">Lokalizacja</a>
+      <a href="kontakt.html" class="hover:underline">Kontakt</a>
+    </div>
+    <div class="flex flex-col sm:flex-row justify-between items-center gap-3 text-xs pt-6 border-t" style="color:var(--ink-soft); border-color:var(--rule);">
+      <span>© 2026 Centrum Psychologiczno-Terapeutyczne Aneta Misiak</span>
+      <div class="flex items-center gap-4">
+        <a href="polityka-prywatnosci.html" class="hover:underline">Polityka prywatności</a>
+        <a href="regulamin.html" class="hover:underline">Regulamin</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  menuBtn.addEventListener('click', () => {
+    const isOpen = mobileMenu.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', isOpen);
+  });
+
+  const revealEls = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    revealEls.forEach(el => io.observe(el));
+  } else {
+    revealEls.forEach(el => el.classList.add('is-visible'));
+  }
+</script>
+
+</body>
+</html>
