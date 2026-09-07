@@ -2,32 +2,68 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://terapeuta-anetamisiak.pl/</loc>
-    <lastmod>2026-07-29</lastmod>
+    <lastmod>2026-09-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://terapeuta-anetamisiak.pl/cennik.html</loc>
-    <lastmod>2026-07-29</lastmod>
+    <lastmod>2026-09-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://terapeuta-anetamisiak.pl/zespol.html</loc>
-    <lastmod>2026-07-29</lastmod>
+    <lastmod>2026-09-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://terapeuta-anetamisiak.pl/faq.html</loc>
-    <lastmod>2026-07-29</lastmod>
+    <lastmod>2026-09-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://terapeuta-anetamisiak.pl/kontakt.html</loc>
-    <lastmod>2026-07-29</lastmod>
+    <lastmod>2026-09-07</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://terapeuta-anetamisiak.pl/trening-umiejetnosci-spolecznych.html</loc>
+    <lastmod>2026-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://terapeuta-anetamisiak.pl/warsztaty-dla-rodzicow.html</loc>
+    <lastmod>2026-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://terapeuta-anetamisiak.pl/terapia-dzieci-i-mlodziezy.html</loc>
+    <lastmod>2026-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://terapeuta-anetamisiak.pl/terapia-doroslych-rodzin-i-par.html</loc>
+    <lastmod>2026-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://terapeuta-anetamisiak.pl/rehabilitacja-spektrum-autyzmu.html</loc>
+    <lastmod>2026-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://terapeuta-anetamisiak.pl/poradnictwo-psychologiczne.html</loc>
+    <lastmod>2026-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>
